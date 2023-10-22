@@ -4,16 +4,20 @@ using UnityEngine.UI;
 
 public class Collectible : MonoBehaviour
 {
-    public GameObject collectText; // Assign the Text UI element in the Inspector
+    public GameObject collectTextPrefab; // Assign the Text UI prefab element in the Inspector
+    private GameObject collectText;
     public float interactDistance = 2f; // Adjust the interaction distance as needed
     public KeyCode collectKey = KeyCode.E;
     public Transform collectible;
     public Transform playerBody;
     public bool canCollect = false;
     public string collectibleIngameName;
-
+    private float distance;
     private void Start()
     {
+        collectText = Instantiate(collectTextPrefab, GameObject.Find("Main Camera").transform);
+
+
         if (collectibleIngameName == "")
             collectibleIngameName = this.gameObject.name;
         collectText.gameObject.SetActive(false);
@@ -24,12 +28,14 @@ public class Collectible : MonoBehaviour
 
     private void OnDestroy()
     {
-        collectText.gameObject.SetActive(false);
+        if(collectText.gameObject)
+        GameObject.Destroy(collectText.gameObject);
     }
 
     private void Update()
     {
-        var distance = Vector3.Distance(collectible.position, playerBody.position);
+       distance = Vector3.Distance(collectible.position, playerBody.position);
+       Debug.Log(distance);
 
         if (canCollect && Input.GetKeyDown(collectKey) && distance <= interactDistance)
         {
@@ -38,8 +44,6 @@ public class Collectible : MonoBehaviour
 
         if (collectible.gameObject)
         {
-            Debug.Log(collectible.name);
-
             if (distance <= interactDistance)
             {
                 collectText.gameObject.SetActive(true);
@@ -49,10 +53,6 @@ public class Collectible : MonoBehaviour
             {
                 collectText.gameObject.SetActive(false);
             }
-        }
-        else
-        {
-            collectText.gameObject.SetActive(false);
         }
     }
 
