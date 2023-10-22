@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,24 +10,48 @@ public class Collectible : MonoBehaviour
     public Transform collectible;
     public Transform playerBody;
     public bool canCollect = false;
+    public string collectibleIngameName;
 
-    private void Start(){
+    private void Start()
+    {
+        if (collectibleIngameName == "")
+            collectibleIngameName = this.gameObject.name;
+        collectText.gameObject.SetActive(false);
+        string displayCollectText = "Press " + collectKey.ToString() + " to collect " + collectibleIngameName; 
+        collectText.GetComponent<TextMeshProUGUI>().text = displayCollectText;
+    }
+
+
+    private void OnDestroy()
+    {
         collectText.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        var distance = Vector3.Distance (collectible.position, playerBody.position);
+        var distance = Vector3.Distance(collectible.position, playerBody.position);
 
         if (canCollect && Input.GetKeyDown(collectKey) && distance <= interactDistance)
         {
             Collect();
         }
 
-        if(distance <= interactDistance)
+        if (collectible.gameObject)
         {
-            collectText.gameObject.SetActive(true);
-        } else {
+            Debug.Log(collectible.name);
+
+            if (distance <= interactDistance)
+            {
+                collectText.gameObject.SetActive(true);
+
+            }
+            else
+            {
+                collectText.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
             collectText.gameObject.SetActive(false);
         }
     }
@@ -50,9 +75,8 @@ public class Collectible : MonoBehaviour
 
     private void Collect()
     {
-
         collectText.gameObject.SetActive(false);
-        Destroy(gameObject);
-        
+        Destroy(collectible.gameObject);
+
     }
 }

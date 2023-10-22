@@ -5279,6 +5279,7 @@ MonoBehaviour:
   collectible: {fileID: 312704862}
   playerBody: {fileID: 1672395982}
   canCollect: 1
+  collectibleIngameName: Batteries
 --- !u!1 &330899250
 GameObject:
   m_ObjectHideFlags: 0
