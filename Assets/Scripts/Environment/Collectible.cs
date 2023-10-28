@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,70 +14,70 @@ public class Collectible : MonoBehaviour
     public bool canCollect = false;
     public string collectibleIngameName;
     private float distance;
+    public int audioManagerClipID;  // the AI will say the name of the object when in sight
+    public GameObject EnableObjectOnCollect; // enables a game object when this object is collected. e.g. used for the helmet
     private void Start()
     {
-        collectText = Instantiate(collectTextPrefab, GameObject.Find("Main Camera").transform);
+        collectText = Instantiate(collectTextPrefab, GameObject.Find("UI").transform);
 
 
         if (collectibleIngameName == "")
             collectibleIngameName = this.gameObject.name;
+
+        string displayCollectText = "Press " + collectKey.ToString() + " to collect " + collectibleIngameName;
+        TextMeshProUGUI colText = collectText.GetComponentInChildren<TextMeshProUGUI>();
+        colText.text = displayCollectText;
         collectText.gameObject.SetActive(false);
-        string displayCollectText = "Press " + collectKey.ToString() + " to collect " + collectibleIngameName; 
-        collectText.GetComponent<TextMeshProUGUI>().text = displayCollectText;
     }
 
 
     private void OnDestroy()
     {
-        if(collectText.gameObject)
-        GameObject.Destroy(collectText.gameObject);
+        if (collectText.gameObject)
+            GameObject.Destroy(collectText.gameObject);
     }
 
     private void Update()
     {
-       distance = Vector3.Distance(collectible.position, playerBody.position);
-       Debug.Log(distance);
+        distance = Vector3.Distance(collectible.position, playerBody.position);
 
-        if (canCollect && Input.GetKeyDown(collectKey) && distance <= interactDistance)
-        {
-            Collect();
-        }
 
-        if (collectible.gameObject)
+
+        if (distance <= interactDistance)
         {
-            if (distance <= interactDistance)
+            if (!collectText.gameObject.active)
+
             {
                 collectText.gameObject.SetActive(true);
-
+             
             }
-            else
+            if (canCollect && Input.GetKeyDown(collectKey))
             {
-                collectText.gameObject.SetActive(false);
+                Collect();
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        else
         {
-            canCollect = true;
+            collectText.gameObject.SetActive(false);
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            canCollect = false;
-        }
-        collectText.gameObject.SetActive(false);
-    }
 
     private void Collect()
     {
+
+        // this is so bad - needs event system:
+        if (collectibleIngameName == "Batteries")
+        {
+            PlayerInventory.Instance.IncrementBatteries(1);
+        }
+
+            // collect sound
+            if (audioManagerClipID != null) AudioManager.instance.PlaySoundEffect(audioManagerClipID);
+        if (EnableObjectOnCollect) EnableObjectOnCollect.gameObject.SetActive(true);
         collectText.gameObject.SetActive(false);
         Destroy(collectible.gameObject);
+       
 
     }
 }
