@@ -63,7 +63,7 @@ public class Collectible : MonoBehaviour
     }
 
 
-    private void Collect()
+    protected virtual void Collect()
     {
 
         // this is so bad - needs event system:
@@ -74,7 +74,7 @@ public class Collectible : MonoBehaviour
 
             // collect sound
             if (audioManagerClipID != null) AudioManager.instance.PlaySoundEffect(audioManagerClipID);
-        if (EnableObjectOnCollect) EnableObjectOnCollect.gameObject.SetActive(true);
+        if (EnableObjectOnCollect != null) EnableObjectOnCollect.gameObject.SetActive(true);
         collectText.gameObject.SetActive(false);
         Destroy(collectible.gameObject);
        

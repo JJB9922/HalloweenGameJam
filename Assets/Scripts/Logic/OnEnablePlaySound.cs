@@ -16,7 +16,6 @@ public class OnEnablePlaySound : MonoBehaviour
     IEnumerator Play()
     {
         yield return new WaitForSeconds(waitBeforePlaying);
-        AudioManager.instance.PlaySoundEffect(audioManagerClipID);
     }
 
     // Update is called once per frame
