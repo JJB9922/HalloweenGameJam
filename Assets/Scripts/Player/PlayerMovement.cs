@@ -7,16 +7,17 @@ namespace PlayerController{
         public Transform groundCheck;
         public LayerMask groundMask;
 
-        public float speed = 12f;
+        public float speed = 100f;
         public float gravity = -9.81f;
         public float groundDistance = 0.4f;
         public float jumpHeight = 3f;
-        public float sprintSpeed = 8.0f;
+        public float sprintSpeed = 150.0f;
         public float sprintDuration = 3.0f; // How long can the player sprint
         public float sprintCooldown = 5.0f; // How long it takes for sprint to fully regenerate
         public float currentSprintTime = 6.0f;
         private bool isSprinting = false;
-    
+        private bool isFlying = false;
+
         Vector3 velocity;
         bool isGrounded;
 
@@ -38,7 +39,10 @@ namespace PlayerController{
             {
                 isSprinting = true;
             }
-            else if (!Input.GetKey(KeyCode.LeftShift) && isSprinting)
+            
+            isFlying = Input.GetKey(KeyCode.LeftControl) && PlayerInventory.Instance.JetPackCollected;
+
+            if (!Input.GetKey(KeyCode.LeftShift) && isSprinting)
             {
                 isSprinting = false;
             }
@@ -61,6 +65,17 @@ namespace PlayerController{
             }
 
             if(Input.GetButtonDown("Jump") && isGrounded){
+                
+                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            }
+
+            if(isFlying)
+            {
+                if (!AudioManager.instance.EffectPlaying)
+                {
+                    AudioManager.instance.PlaySoundEffect(29);
+                }
+
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             }
 

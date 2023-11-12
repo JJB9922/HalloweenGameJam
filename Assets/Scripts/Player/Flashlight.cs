@@ -12,6 +12,7 @@ namespace PlayerController
         private int batteries = 0;
         public bool flashlightOn;
         public GameObject ControlsTextBatteries;
+        public bool IgnoreBatteries = false;
 
         [SerializeField] private LightFlickerEffect flashlightFlickerEffect;
         [SerializeField] private Light flashlightLight;
@@ -26,13 +27,18 @@ namespace PlayerController
         {
             batteryNotificationText.gameObject.SetActive(false);
             flashlightLight.gameObject.SetActive(false);
-            PlayerInventory.Instance.IncrementBatteries(3);
             batteries = PlayerInventory.Instance.Batteries;
         }
 
         // Update is called once per frame
         void Update()
         {
+            if(IgnoreBatteries)
+            {
+                flashlightLight.gameObject.SetActive(true);
+                return;
+            }
+
             if (flashlightOn)
             {
                 flashlightBatteryTimer -= Time.deltaTime;

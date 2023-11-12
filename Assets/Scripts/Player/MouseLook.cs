@@ -11,7 +11,7 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Application.targetFrameRate = 144;
+
         Cursor.lockState = CursorLockMode.Locked;
     }
 

@@ -384,11 +384,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 16776609}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 16776609}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -948,6 +949,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234c5d0c3948549bd9657592e4d58471, type: 3}
+--- !u!1 &53956565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 53956567}
+  - component: {fileID: 53956566}
+  m_Layer: 0
+  m_Name: Gaia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &53956566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53956565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da255c8173fb96642a9e3c4dd22b26be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlsTextBatteriesText: {fileID: 0}
+  inspectTextUIObject: {fileID: 0}
+  informationTextUIObject: {fileID: 0}
+  PlayerTransform: {fileID: 1306225482}
+--- !u!4 &53956567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53956565}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -171.05, y: 43.4, z: -41.7}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60435876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 285833f0b62a67741a82bebd5063ef36, type: 3}
@@ -2476,11 +2525,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 141564078}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 141564078}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -3419,11 +3469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 214860562}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 214860562}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -4348,11 +4399,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 276433920}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 276433920}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -5950,11 +6002,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 368000935}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 368000935}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -6367,11 +6420,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 399363577}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 399363577}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -7258,11 +7312,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 509048372}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 509048372}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -8140,11 +8195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 565366310}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 565366310}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -10231,11 +10287,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 745886412}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 745886412}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -10801,11 +10858,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 776517096}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 776517096}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -14053,6 +14111,7 @@ MonoBehaviour:
   bobbingSpeed: 0.05
   bobbingAmount: 0.1
   midpoint: 1.8
+  AutoBob: 0
 --- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14122,11 +14181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 976031676}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 976031676}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -15130,6 +15190,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a699487877e77b439ff09deb77625e5, type: 3}
+--- !u!1 &1048979833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048979834}
+  - component: {fileID: 1048979835}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048979834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048979833}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -171.05, y: 43.4, z: -41.7}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1696793870}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1048979835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048979833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08afb7c7b7268fc4883b2a8d0de1edb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractKey: 101
+  interactDistance: 15
+  playerBody: {fileID: 1306225482}
+  interactableTransform: {fileID: 1048979834}
 --- !u!1 &1055397296
 GameObject:
   m_ObjectHideFlags: 0
@@ -20696,11 +20805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 1114916509}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1114916509}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -21145,11 +21255,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 1133412329}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1133412329}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -21326,11 +21437,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1140488399}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1140488399}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -22379,11 +22491,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1215898799}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1215898799}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -22740,11 +22853,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 1246055662}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1246055662}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -23405,6 +23519,7 @@ MonoBehaviour:
   flashlightBatteryTimer: 0
   flashlightOn: 0
   ControlsTextBatteries: {fileID: 1901671941}
+  IgnoreBatteries: 0
   flashlightFlickerEffect: {fileID: 1695749953}
   flashlightLight: {fileID: 1695749952}
   batteryNotificationText: {fileID: 2061213007}
@@ -23662,6 +23777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlsTextBatteries: {fileID: 1901671941}
+  Items: []
 --- !u!1001 &1310610106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24085,11 +24201,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1326440929}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1326440929}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -24352,11 +24469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1348052972}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1348052972}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -24481,11 +24599,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 1351803309}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1351803309}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -24864,11 +24983,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1377397147}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1377397147}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -25462,11 +25582,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1418259082}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1418259082}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -25986,11 +26107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1495177469}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1495177469}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -26264,11 +26386,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1512170729}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1512170729}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -26375,11 +26498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1514098130}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1514098130}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -28034,11 +28158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1658305400}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1658305400}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -28376,11 +28501,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1675824829}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1675824829}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -28496,6 +28622,112 @@ MonoBehaviour:
   minIntensity: 0.7
   maxIntensity: 1.3
   smoothing: 5
+--- !u!1 &1696793869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696793870}
+  - component: {fileID: 1696793873}
+  - component: {fileID: 1696793872}
+  - component: {fileID: 1696793871}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1696793870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696793869}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1048979834}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1696793871
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696793869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1696793872
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696793869}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1696793873
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696793869}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1698216962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29242,6 +29474,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 849928609}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e4283c831dfd514c99fc61a7d07de4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734955664}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 4e4283c831dfd514c99fc61a7d07de4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1734955663}
@@ -29249,6 +29484,11 @@ PrefabInstance:
 --- !u!4 &1734955660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e4283c831dfd514c99fc61a7d07de4e, type: 3}
+  m_PrefabInstance: {fileID: 1734955659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1734955661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e4283c831dfd514c99fc61a7d07de4e, type: 3}
   m_PrefabInstance: {fileID: 1734955659}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1734955662 stripped
@@ -29277,6 +29517,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 1.9999995, z: 3.4484556}
   m_Center: {x: 0, y: 0, z: 0.72422844}
+--- !u!114 &1734955664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734955661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7780c461395084db2d167dd5a4ddc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractKey: 101
+  interactDistance: 2
+  playerBody: {fileID: 1306225482}
+  interactableTransform: {fileID: 1734955660}
+  collectTextPrefab: {fileID: 0}
+  collectKey: 101
+  canCollect: 1
+  collectibleIngameName: 
+  audioManagerClipID: 28
+  EnableObjectOnCollect: {fileID: 0}
 --- !u!1001 &1735985255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29802,11 +30064,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1778249660}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1778249660}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -30450,11 +30713,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 2
-  collectKey: 101
-  collectible: {fileID: 1834677198}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1834677198}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Batteries
   audioManagerClipID: 0
@@ -31259,11 +31523,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0beeace37d0e9364b833ecd5d35c5f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  InteractKey: 101
   interactDistance: 3
-  collectKey: 101
-  collectible: {fileID: 1912902472}
   playerBody: {fileID: 1672395982}
+  interactableTransform: {fileID: 1912902472}
+  collectTextPrefab: {fileID: 7121892867036607590, guid: 3fa6cf1f03e0d6f40b53637f429a7dec, type: 3}
+  collectKey: 101
   canCollect: 1
   collectibleIngameName: Memory card
   audioManagerClipID: 0
@@ -34373,6 +34638,8 @@ ConstantForce:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 53956567}
+  - {fileID: 1048979834}
   - {fileID: 705507995}
   - {fileID: 90585012}
   - {fileID: 1859273954}

@@ -7,11 +7,17 @@ public class Headbobber : MonoBehaviour {
     public float bobbingSpeed = 0.18f;
     public float bobbingAmount = 0.2f;
     public float midpoint = 2.0f;
+    public bool AutoBob = false;
 
     void Update () {
         float waveslice = 0.0f;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        if(AutoBob)
+        {
+            horizontal = 0.5f;
+            vertical = 0.5f;
+        }
         if (Mathf.Abs(horizontal) == 0 && Mathf.Abs(vertical) == 0) {
             timer = 0.0f;
         } else {

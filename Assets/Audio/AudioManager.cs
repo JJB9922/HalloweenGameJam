@@ -63,10 +63,6 @@ public class AudioManager : MonoBehaviour
                 PlayNextSoundEffect();
             }
         }
-        else
-        {
-            Debug.LogError("Sound effect index out of range.");
-        }
     }
 
     private void PlayNextSoundEffect()
@@ -99,4 +95,6 @@ public class AudioManager : MonoBehaviour
         soundEffectsVolume = Mathf.Clamp(volume, 0, 100);
         soundEffectsSource.volume = soundEffectsVolume / 100f;
     }
+
+    public bool EffectPlaying => isSoundEffectPlaying;
 }
